@@ -1,0 +1,52 @@
+.ptf {
+  display: flex;
+  margin-top: 80px;
+  height: 400px;
+  object-fit: contain;
+  width: 100%;
+
+  background-image: url(https://img.freepik.com/free-photo/millennial-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-modern-night-office_7861-2386.jpg?t=st=1722707791~exp=1722711391~hmac=31fb6666ac320365386ee47086f3f09be8a02d92c7109a6319bba7378507703c&w=1060);
+}
+.dt {
+  display: flex;
+  margin: 120px auto;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.dt img {
+  margin-left: 30px;
+}
+
+.dt h1,
+p {
+  color: white;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+  .ptf {
+    flex-direction: column;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .dt {
+    flex-direction: column;
+    margin: 60px auto;
+    width: 90%;
+    align-items: center;
+  }
+
+  .dt img {
+    margin-left: 0;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .dt h1,
+  .dt p {
+    text-align: center;
+    margin: 0 10px;
+  }
+}

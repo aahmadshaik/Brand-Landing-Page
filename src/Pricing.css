@@ -1,0 +1,105 @@
+.prc {
+  flex-wrap: wrap;
+  max-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.prc {
+  margin: 0 auto;
+}
+.prc {
+  margin-top: 120px;
+}
+
+.prc-1,
+.prc-2,
+.prc-3 {
+  background-color: white;
+  border: solid 0.5px rgba(209, 201, 201, 0.683);
+  height: 450px;
+  width: 350px;
+  border-radius: 10px;
+}
+.p-month p {
+  color: gray;
+}
+.prc-dt h1 {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.prc-dt p {
+  font-weight: 500;
+}
+.prc-dt h1,
+p {
+  text-align: center;
+}
+.opt p {
+  font-weight: 400;
+  color: black;
+  font-size: 16px;
+}
+
+.opt {
+  margin-top: 50px;
+}
+
+.prc-bt {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.prc-dt button {
+  background-color: #6d62fd;
+  color: white;
+  font-size: 15px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+  .prc {
+    grid-template-columns: 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    max-width: 100%;
+    margin-top: 60px;
+  }
+
+  .prc-1,
+  .prc-2,
+  .prc-3 {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .prc-dt h1 {
+    font-size: 28px;
+  }
+
+  .prc-dt p,
+  .opt p {
+    font-size: 14px;
+  }
+
+  .opt {
+    margin-top: 30px;
+  }
+
+  .prc-bt {
+    margin-top: 30px;
+  }
+
+  .prc-dt button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,137 @@
+.f-cont {
+  background-color: rgba(8, 67, 185, 0.429);
+  margin-top: 100px;
+  height: 600px;
+  position: relative;
+  display: inline;
+  z-index: 1;
+}
+
+.f-image img {
+  height: 400px;
+  width: fit-content;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+
+.f-image h3 {
+  background-color: #6d62fd;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-weight: 500;
+
+  /* font-size: 20px; */
+
+  /* position: absolute; */
+}
+
+.d-box h3 {
+  position: absolute;
+  bottom: 0;
+  right: 600px;
+  top: 300px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.d-box {
+  overflow: hidden;
+}
+
+.d-box i {
+  position: absolute;
+  bottom: 0;
+  right: 700px;
+  top: 300px;
+  border-radius: 10px;
+  color: white;
+}
+.d-box i {
+  margin-top: 40px;
+}
+
+.f-info {
+  position: absolute;
+  bottom: 0;
+  margin-left: 700px;
+  top: 120px;
+  /* background-color: rgba(221, 221, 222, 0.322); */
+}
+
+.f-info h3 {
+  color: #6d62fd;
+  margin-left: 20px;
+}
+
+.f-info p {
+  color: rgb(143, 134, 134);
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+.f-info button {
+  background-color: #6d62fd;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  width: 150px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.f-info .pt {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .f-cont {
+    margin-top: 50px;
+    height: auto;
+    display: block;
+  }
+
+  .f-image img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+
+  .f-image h3 {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .d-box h3,
+  .d-box i {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .f-info {
+    position: static;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .f-info h3,
+  .f-info p,
+  .f-info button {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .f-info button {
+    width: 100%;
+  }
+}

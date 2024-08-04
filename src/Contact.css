@@ -1,0 +1,119 @@
+.contact-cnt {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f900;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.contact-dt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-dt h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.contact-dt p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 80px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: center; */
+}
+
+.input-group,
+.textarea-group {
+  width: calc(50% - 10px); /* Two inputs per row with gap */
+  margin-bottom: 10px;
+}
+
+.textarea-group {
+  width: 100%; /* Full width for textarea */
+}
+
+.contact-list label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  /* margin-left: 20px; */
+}
+
+.contact-list input[type="text"],
+.contact-list textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc9c;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-list textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-list button {
+  padding: 10px 20px;
+  background-color: #6d62fd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-start;
+
+  margin: 20px auto;
+}
+
+.contact-list button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .contact-dt h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-dt p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .input-group,
+  .textarea-group {
+    width: 100%; /* Full width for inputs and textarea */
+  }
+
+  .contact-list {
+    gap: 10px;
+  }
+
+  .contact-list label {
+    font-size: 0.9rem;
+  }
+
+  .contact-list input[type="text"],
+  .contact-list textarea {
+    padding: 8px;
+  }
+
+  .contact-list button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}

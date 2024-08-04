@@ -1,0 +1,101 @@
+/* Base Styles */
+
+.client h1,
+.client p {
+  text-align: center;
+}
+
+.client p {
+  color: rgb(143, 134, 134);
+  font-weight: 400;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.client h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.cst {
+  flex-wrap: wrap;
+  max-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.cst-1,
+.cst-2,
+.cst-3,
+.cst-4 {
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  border: solid 1px lightgray;
+}
+
+.txt-clt {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.txt-clt h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.txt-clt p {
+  color: rgb(133, 135, 137);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.dst p {
+  color: black;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+  .client p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .client h1 {
+    font-size: 24px;
+  }
+
+  .cst {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .cst-1,
+  .cst-2,
+  .cst-3,
+  .cst-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .txt-clt {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .txt-clt h3 {
+    font-size: 18px;
+  }
+
+  .txt-clt p {
+    font-size: 14px;
+  }
+}
